@@ -1,0 +1,89 @@
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+/*
+고양체
+https://noonnu.cc/font_page/79
+*/
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+베스킨라빈스
+https://noonnu.cc/font_page/246
+*/
+@font-face {
+    font-family: 'BRBA_B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+베스킨라빈스
+https://noonnu.cc/font_page/64
+*/
+@font-face {
+    font-family: 'YanoljaYacheR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YanoljaYacheR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+넷마블체B
+https://noonnu.cc/font_page/118
+*/
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+애터미체
+https://noonnu.cc/font_page/120
+*/
+@font-face {
+    font-family: 'Atomy-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Atomy-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+빙그레체
+https://noonnu.cc/font_page/5
+*/
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+헤드라인체
+https://noonnu.cc/font_page/232
+*/
+@font-face {
+    font-family: 'headline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/headline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+font-family: 'Bowlby One SC', cursive;
+귀여운 영어
+*/
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+/*
+font-family: 'Spicy Rice', cursive;
+귀여운 영어2
+*/
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+/*
+font-family: 'Henny Penny', cursive;
+할로윈느낌
+*/
+@import url('https://fonts.googleapis.com/css?family=Henny+Penny');
