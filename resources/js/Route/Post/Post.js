@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Axios from 'axios';
 import RenderPosts from '../../components/Post/RenderPosts';
 import SelectButton from '../../components/Post/SelectButton';
 import RenderMyPosts from '../../components/Post/RenderMyPosts';
 import Container from '../../components/Style/Container';
+import Loader from '../../components/Loader';
 
 export default class Post extends Component {
     constructor(props) {
@@ -12,7 +12,8 @@ export default class Post extends Component {
         this.state = {
             posts: [],
             myPosts: [],
-            select: false
+            select: false,
+            loading: true
         };
     }
 
@@ -39,7 +40,8 @@ export default class Post extends Component {
     async _getPosts() {
         return await Axios.get(`/posts`).then(response =>
             this.setState({
-                posts: [...response.data.posts]
+                posts: [...response.data.posts],
+                loading: false
             })
         );
     }
@@ -59,18 +61,24 @@ export default class Post extends Component {
     render() {
         console.log(this.state);
         return (
-            <Container>
-                <SelectButton handleSelectButton={this.handleSelectButton} select={this.state.select} />
-                {this.state.select ? (
-                    <RenderMyPosts myPosts={this.state.myPosts} />
+            <>
+                {this.state.loading ? (
+                    <Loader />
                 ) : (
-                    <RenderPosts
-                        posts={this.state.posts}
-                        handleLinkShow={this.handleLinkShow}
-                        handleLinkCreate={this.handleLinkCreate}
-                    />
+                    <Container>
+                        <SelectButton handleSelectButton={this.handleSelectButton} select={this.state.select} />
+                        {this.state.select ? (
+                            <RenderMyPosts myPosts={this.state.myPosts} />
+                        ) : (
+                            <RenderPosts
+                                posts={this.state.posts}
+                                handleLinkShow={this.handleLinkShow}
+                                handleLinkCreate={this.handleLinkCreate}
+                            />
+                        )}
+                    </Container>
                 )}
-            </Container>
+            </>
         );
     }
 }

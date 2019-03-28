@@ -36,6 +36,7 @@
         "eslint-config-airbnb": "^17.1.0",
         "history": "^4.9.0",
         "react-js-pagination": "^3.0.2",
+        "react-loader-spinner": "^2.3.0",
         "react-player": "^1.10.0",
         "react-router": "^5.0.0",
         "react-router-dom": "^5.0.0",

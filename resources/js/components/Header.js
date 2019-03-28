@@ -22,6 +22,7 @@ const HeaderLink = styled(Link)``;
 
 export default withRouter(({ location: { pathname } }) => (
     <Container>
+        {console.log(location)}
         <Ul>
             <Li current={pathname === '/'}>
                 <HeaderLink to='/'>Home</HeaderLink>
