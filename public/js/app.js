@@ -70043,7 +70043,7 @@ var HeaderLink = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderLink, {
     to: "/"
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Li, {
-    current: pathname === '/posts'
+    current: pathname === '/posts' || pathname === '/posts/create'
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(HeaderLink, {
     to: "/posts"
   }, "Post"))));

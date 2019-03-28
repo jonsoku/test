@@ -26,7 +26,7 @@ export default withRouter(({ location: { pathname } }) => (
             <Li current={pathname === '/'}>
                 <HeaderLink to='/'>Home</HeaderLink>
             </Li>
-            <Li current={pathname === '/posts'}>
+            <Li current={pathname === '/posts' || pathname === '/posts/create'}>
                 <HeaderLink to='/posts'>Post</HeaderLink>
             </Li>
         </Ul>
