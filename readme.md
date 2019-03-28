@@ -141,11 +141,10 @@
 
 
     ##create .babelrc
+
     {
-        "presets": [
-            "@babel/preset-env",
-            "@babel/preset-react"
-        ]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
     }
 
 ### 라우트 -> 라우트 방법
@@ -235,3 +234,5 @@
     "files.associations": {
         "*.js": "javascriptreact"
     }
+
+### rafc (함수형) rcc (일반)

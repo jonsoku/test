@@ -10,6 +10,8 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
         "@babel/preset-react": "^7.0.0",
         "axios": "^0.18.0",
         "babel-plugin-transform-class-properties": "^6.24.1",
@@ -27,7 +29,8 @@
         "react-dom": "^16.2.0",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
-        "sass-loader": "^7.1.0"
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "eslint-config-airbnb": "^17.1.0",

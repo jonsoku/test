@@ -25,11 +25,6 @@ const globalStyles = createGlobalStyle`
     --box-shadow: 9px 9px 16px -5px #757575;
     --taxt-shadow: 2px 2px 2px #969696;
     }
-    .container {
-        width: 1100px;
-        margin: 0 auto;
-        transition: all .4s;
-    }
 
 `;
 
